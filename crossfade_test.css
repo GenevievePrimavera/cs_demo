@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#crossfade {
+    position:relative;
+    height:250px;
+    width:400px;
+}
+#crossfade img {
+    position:absolute;
+    left:0;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;    
+    transition: opacity 1s ease-in-out;
+}
+ 
+#crossfade img.top:hover {
+    opacity:0;
+}
+.bottom,
+.top{
+	width: 980px;
+	height: auto;
+}
+.title{
+	width: 166px;
+	height: 171px;
+	background: contain;
+	background-repeat:no-repeat;
+	position:absolute;
+	left:35px;
+	top:0;
+	background-image: url("images/Asset 2-8.png");
+
+}
